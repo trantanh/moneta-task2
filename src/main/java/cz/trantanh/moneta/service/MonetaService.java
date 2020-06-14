@@ -7,5 +7,5 @@ import java.util.List;
  * 14.06.2020
  */
 public interface MonetaService {
-    int countNumber(List<Integer> numbers);
+    int calculateNumbers(List<Integer> numbers);
 }

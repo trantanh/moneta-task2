@@ -1,7 +1,6 @@
 package cz.trantanh.moneta;
 
 import cz.trantanh.moneta.service.MonetaService;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -29,7 +28,7 @@ class MonetaApplicationTests {
         numberList.add(7);
         numberList.add(9);
         numberList.add(1);
-        int result = monetaService.countNumber(numberList);
+        int result = monetaService.calculateNumbers(numberList);
         assertThat(result).isEqualTo(11331545);
     }
 }

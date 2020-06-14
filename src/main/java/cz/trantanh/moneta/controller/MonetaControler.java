@@ -25,6 +25,6 @@ public class MonetaControler {
             int convertNumber = Character.getNumericValue(n);
             numberList.add(convertNumber);
         }
-        return monetaService.countNumber(numberList);
+        return monetaService.calculateNumbers(numberList);
     }
 }

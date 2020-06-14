@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Service used for caculate numbers by task 2
+ * Service used for calculate numbers by task 2
  * @author Tran Tuan Anh, tran.t.anh@email.cz
  */
 @Service
 public class MonetaServiceImpl implements MonetaService {
 
     @Override
-    public int countNumber(List<Integer> numbers) {
+    public int calculateNumbers(List<Integer> numbers) {
         changePosition(numbers);
         List<Integer> result = multiply(numbers);
         List<Integer> list = removeNumber(result);
